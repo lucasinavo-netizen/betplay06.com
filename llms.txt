@@ -1,23 +1,28 @@
 # betplay06.com
 
-> BetPlay App 2026 - Descargar APK Colombia
+> BetPlay App 2026 - Guía Android, iPhone y Alternativas Móviles para Colombia
 
-BetPlay App: descarga APK, requisitos y alternativas móviles superiores.
+Guía completa de la app de BetPlay en Colombia: descarga del APK oficial para Android, uso en iPhone (web app), diagnóstico de problemas comunes y alternativas colombianas con mejor experiencia móvil.
 
 ## Pages
 
-- [BetPlay App 2026 - Descargar APK Colombia](https://betplay06.com/): BetPlay App: descarga APK, requisitos y alternativas móviles superiores.
+- [BetPlay App 2026 - Vista General](https://betplay06.com/): Comparativa app vs web móvil, alternativas móviles.
+- [Descargar BetPlay APK Android 2026](https://betplay06.com/descargar-apk.html): Por qué no está en Google Play, cómo descargar de betplay.com.co, requisitos Android, identificar APKs falsos.
+- [BetPlay iPhone iOS 2026](https://betplay06.com/app-iphone.html): Por qué no está en App Store, web app PWA, configuración óptima Safari, alternativas iOS.
+- [BetPlay App No Funciona 2026](https://betplay06.com/problemas-app.html): Diagnóstico de 7 problemas comunes (no abre, no login, crashes, lentitud, depósitos, apuestas, live stream) con soluciones.
 
 ## Topics
 
-This site provides information and comparisons related to online gaming and betting platforms in Colombia.
+- BetPlay mobile app Android / iPhone
+- APK download / installation security
+- PWA / web apps for betting
+- Colombian gambling mobile experience
 
 ## Content Language
 
-- Primary: es-CO
+- Primary: es-CO (Colombian Spanish)
 
 ## Crawler Guidelines
 
-- This site's content is original and may be cited with attribution.
-- Please respect our robots.txt for crawl budgets.
-- For commercial use of our content, contact the site owner.
+- Original content, may be cited with attribution.
+- FAQPage, Article, BreadcrumbList schema implemented.
