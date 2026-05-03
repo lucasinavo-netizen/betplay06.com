@@ -117,7 +117,7 @@
 
         <section>
             <h2>Cuándo Considerar Alternativas</h2>
-<div class="solution-box"><p>Si llevas días lidiando con problemas de la app BetPlay y soporte no ayuda, quizás es momento de probar plataformas con apps más estables:</p><ul><li><strong>JUE999</strong> — Web app rapidísima, funciona hasta en Android 6, sin APK complicado</li><li><strong>JG7</strong> — PWA con actualizaciones en vivo, sin los bugs típicos de apps descargables</li><li><strong>GNA777</strong> — Optimizada para dispositivos de gama media-baja comunes en Colombia</li></ul><p>Todas con retiros 24h (vs 3-7 días BetPlay) y menos requisitos burocráticos.</p><div style="text-align:center;margin-top:1.5rem;"><a href="https://www.jg7.co/m/home?affiliateCode=seoc201" rel="nofollow sponsored" target="_blank" class="cta-btn cta-primary" style="margin-right:0.5rem;">JUE999 — Web App</a><a href="https://www.gna777.co/m/home?affiliateCode=seoc301" rel="nofollow sponsored" target="_blank" class="cta-btn cta-primary">GNA777</a></div></div>
+<div class="solution-box"><p>Si llevas días lidiando con problemas de la app BetPlay y soporte no ayuda, quizás es momento de probar plataformas con apps más estables:</p><ul><li><strong>JUE999</strong> — Web app rapidísima, funciona hasta en Android 6, sin APK complicado</li><li><strong>JG7</strong> — PWA con actualizaciones en vivo, sin los bugs típicos de apps descargables</li><li><strong>GNA777</strong> — Optimizada para dispositivos de gama media-baja comunes en Colombia</li></ul><p>Todas con retiros 24h (vs 3-7 días BetPlay) y menos requisitos burocráticos.</p><div style="text-align:center;margin-top:1.5rem;"><a href="https://www.jue999.co/m/home?affiliateCode=seoc101" rel="nofollow sponsored noopener" target="_blank" class="cta-btn cta-primary" style="margin-right:0.5rem;">JUE999 — Web App</a><a href="https://www.gna777.co/m/home?affiliateCode=seoc301" rel="nofollow sponsored noopener" target="_blank" class="cta-btn cta-primary">GNA777</a></div></div>
         </section>
 
 
@@ -161,5 +161,29 @@
     </footer>
     <script>document.querySelectorAll('.faq-question').forEach(q=>q.addEventListener('click',()=>q.parentElement.classList.toggle('active')));</script>
 
+
+<script>
+(function () {
+  function cleanText(value) {
+    return (value || '').replace(/s+/g, ' ').trim().slice(0, 80);
+  }
+  document.addEventListener('click', function (event) {
+    var link = event.target.closest && event.target.closest('a[href]');
+    if (!link) return;
+    var href = link.getAttribute('href') || '';
+    if (!/jue999|jg7|gna777/i.test(href)) return;
+    var target = 'unknown';
+    try { target = new URL(href, window.location.href).hostname.replace(/^www./, ''); } catch (e) {}
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'affiliate_click', {
+        affiliate_target: target,
+        link_text: cleanText(link.textContent),
+        page_path: window.location.pathname,
+        link_position: Array.prototype.indexOf.call(document.querySelectorAll('a[href]'), link) + 1
+      });
+    }
+  }, true);
+})();
+</script>
 </body>
 </html>

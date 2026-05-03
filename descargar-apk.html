@@ -107,7 +107,7 @@
 
         <section>
             <h2>Alternativas sin Descargar APK: Web Apps</h2>
-<p>La forma más segura de jugar en BetPlay y otras plataformas es <strong>usar la versión web móvil</strong> (PWA — Progressive Web App) en lugar de descargar APKs:</p><ul><li><strong>Sin riesgo de APK falso</strong> — visitas el sitio y listo</li><li><strong>Sin permisos invasivos</strong> — el navegador aisla la app</li><li><strong>Siempre actualizado</strong> — no necesitas descargar updates</li><li><strong>Funciona offline básico</strong> — con PWA puedes agregar acceso directo al home</li><li><strong>Mismo rendimiento</strong> — los sitios móviles modernos son tan rápidos como apps nativas</li></ul><p>Plataformas como JUE999, JG7 y GNA777 ofrecen web apps tan buenas como una app nativa, sin requerir descargar nada:</p><div class="solution-box"><p><strong>Para jugar sin descargas:</strong></p><ul><li>JUE999 → web app optimizada, funciona en cualquier Android</li><li>JG7 → PWA con modo offline, agrega a home screen</li><li>GNA777 → web móvil completa, retiros en 24h</li></ul><div style="text-align:center;margin-top:1rem;"><a href="https://www.jg7.co/m/home?affiliateCode=seoc201" rel="nofollow sponsored" target="_blank" class="cta-btn cta-primary" style="margin-right:0.5rem;">Probar JUE999</a><a href="https://www.gna777.co/m/home?affiliateCode=seoc301" rel="nofollow sponsored" target="_blank" class="cta-btn cta-primary">GNA777</a></div></div>
+<p>La forma más segura de jugar en BetPlay y otras plataformas es <strong>usar la versión web móvil</strong> (PWA — Progressive Web App) en lugar de descargar APKs:</p><ul><li><strong>Sin riesgo de APK falso</strong> — visitas el sitio y listo</li><li><strong>Sin permisos invasivos</strong> — el navegador aisla la app</li><li><strong>Siempre actualizado</strong> — no necesitas descargar updates</li><li><strong>Funciona offline básico</strong> — con PWA puedes agregar acceso directo al home</li><li><strong>Mismo rendimiento</strong> — los sitios móviles modernos son tan rápidos como apps nativas</li></ul><p>Plataformas como JUE999, JG7 y GNA777 ofrecen web apps tan buenas como una app nativa, sin requerir descargar nada:</p><div class="solution-box"><p><strong>Para jugar sin descargas:</strong></p><ul><li>JUE999 → web app optimizada, funciona en cualquier Android</li><li>JG7 → PWA con modo offline, agrega a home screen</li><li>GNA777 → web móvil completa, retiros en 24h</li></ul><div style="text-align:center;margin-top:1rem;"><a href="https://www.jue999.co/m/home?affiliateCode=seoc101" rel="nofollow sponsored noopener" target="_blank" class="cta-btn cta-primary" style="margin-right:0.5rem;">Probar JUE999</a><a href="https://www.gna777.co/m/home?affiliateCode=seoc301" rel="nofollow sponsored noopener" target="_blank" class="cta-btn cta-primary">GNA777</a></div></div>
         </section>
 
         <section>
@@ -156,5 +156,29 @@
     </footer>
     <script>document.querySelectorAll('.faq-question').forEach(q=>q.addEventListener('click',()=>q.parentElement.classList.toggle('active')));</script>
 
+
+<script>
+(function () {
+  function cleanText(value) {
+    return (value || '').replace(/s+/g, ' ').trim().slice(0, 80);
+  }
+  document.addEventListener('click', function (event) {
+    var link = event.target.closest && event.target.closest('a[href]');
+    if (!link) return;
+    var href = link.getAttribute('href') || '';
+    if (!/jue999|jg7|gna777/i.test(href)) return;
+    var target = 'unknown';
+    try { target = new URL(href, window.location.href).hostname.replace(/^www./, ''); } catch (e) {}
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'affiliate_click', {
+        affiliate_target: target,
+        link_text: cleanText(link.textContent),
+        page_path: window.location.pathname,
+        link_position: Array.prototype.indexOf.call(document.querySelectorAll('a[href]'), link) + 1
+      });
+    }
+  }, true);
+})();
+</script>
 </body>
 </html>

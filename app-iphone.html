@@ -112,7 +112,7 @@
 
         <section>
             <h2>Alternativas con Mejor Experiencia iOS</h2>
-<p>Algunas plataformas colombianas tienen web apps mejor optimizadas para iPhone específicamente:</p><div class="solution-box"><ul><li><strong>JUE999</strong> — PWA totalmente funcional en iOS, notificaciones push (iOS 16.4+), login con Face ID via llavero</li><li><strong>JG7</strong> — web app ultrarrápida, optimizada para iPhone 12+, soporta Apple Pay para depósitos (único en Colombia)</li><li><strong>GNA777</strong> — interfaz minimalista, perfecta para uso móvil, retiros 24h</li></ul><p>La experiencia en iPhone puede ser superior a BetPlay porque estas plataformas construyeron sus webs con móvil como prioridad, no como adaptación.</p><div style="text-align:center;margin-top:1.5rem;"><a href="https://www.jg7.co/m/home?affiliateCode=seoc201" rel="nofollow sponsored" target="_blank" class="cta-btn cta-primary" style="margin-right:0.5rem;">JUE999 — PWA iOS</a><a href="https://www.gna777.co/m/home?affiliateCode=seoc301" rel="nofollow sponsored" target="_blank" class="cta-btn cta-primary">GNA777</a></div></div>
+<p>Algunas plataformas colombianas tienen web apps mejor optimizadas para iPhone específicamente:</p><div class="solution-box"><ul><li><strong>JUE999</strong> — PWA totalmente funcional en iOS, notificaciones push (iOS 16.4+), login con Face ID via llavero</li><li><strong>JG7</strong> — web app ultrarrápida, optimizada para iPhone 12+, soporta Apple Pay para depósitos (único en Colombia)</li><li><strong>GNA777</strong> — interfaz minimalista, perfecta para uso móvil, retiros 24h</li></ul><p>La experiencia en iPhone puede ser superior a BetPlay porque estas plataformas construyeron sus webs con móvil como prioridad, no como adaptación.</p><div style="text-align:center;margin-top:1.5rem;"><a href="https://www.jue999.co/m/home?affiliateCode=seoc101" rel="nofollow sponsored noopener" target="_blank" class="cta-btn cta-primary" style="margin-right:0.5rem;">JUE999 — PWA iOS</a><a href="https://www.gna777.co/m/home?affiliateCode=seoc301" rel="nofollow sponsored noopener" target="_blank" class="cta-btn cta-primary">GNA777</a></div></div>
         </section>
 
 
@@ -156,5 +156,29 @@
     </footer>
     <script>document.querySelectorAll('.faq-question').forEach(q=>q.addEventListener('click',()=>q.parentElement.classList.toggle('active')));</script>
 
+
+<script>
+(function () {
+  function cleanText(value) {
+    return (value || '').replace(/s+/g, ' ').trim().slice(0, 80);
+  }
+  document.addEventListener('click', function (event) {
+    var link = event.target.closest && event.target.closest('a[href]');
+    if (!link) return;
+    var href = link.getAttribute('href') || '';
+    if (!/jue999|jg7|gna777/i.test(href)) return;
+    var target = 'unknown';
+    try { target = new URL(href, window.location.href).hostname.replace(/^www./, ''); } catch (e) {}
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', 'affiliate_click', {
+        affiliate_target: target,
+        link_text: cleanText(link.textContent),
+        page_path: window.location.pathname,
+        link_position: Array.prototype.indexOf.call(document.querySelectorAll('a[href]'), link) + 1
+      });
+    }
+  }, true);
+})();
+</script>
 </body>
 </html>
